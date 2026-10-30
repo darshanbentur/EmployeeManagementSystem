@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Employee Management System</h1>
+
+<h2>Add Employee</h2>
+
+<form action="addEmployee" method="post">
+    <label>Name:</label>
+    <input type="text" name="name" required>
+    <br><br>
+
+    <label>Email:</label>
+    <input type="email" name="email" required>
+    <br><br>
+
+    <label>Department:</label>
+    <input type="text" name="department" required>
+    <br><br>
+
+    <label>Salary:</label>
+    <input type="number" name="salary" step="0.01" min="0" required>
+    <br><br>
+
+    <button type="submit">Add Employee</button>
+</form>
+
+<hr>
+
+<h2>Update Employee</h2>
+
+<form action="updateEmployee" method="post">
+    <label>Employee ID:</label>
+    <input type="number" name="id" min="1" required>
+    <br><br>
+
+    <label>Name:</label>
+    <input type="text" name="name" required>
+    <br><br>
+
+    <label>Email:</label>
+    <input type="email" name="email" required>
+    <br><br>
+
+    <label>Department:</label>
+    <input type="text" name="department" required>
+    <br><br>
+
+    <label>Salary:</label>
+    <input type="number" name="salary" step="0.01" min="0" required>
+    <br><br>
+
+    <button type="submit">Update Employee</button>
+</form>
+
+<hr>
+
+<p><a href="viewEmployees">View All Employees</a></p>
+
+</body>
+</html>
